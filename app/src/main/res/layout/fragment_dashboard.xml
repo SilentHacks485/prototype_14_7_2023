@@ -40,11 +40,21 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/about_text"
+            android:layout_height="50dp"
+            android:text="@string/gps_tracker"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="30sp"
+            android:id = "@+id/text_title1"
+            />
 
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+
+            />
 
     </FrameLayout>
 
