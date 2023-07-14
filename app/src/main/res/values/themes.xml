@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Prototype_14_7_2023" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+
+    </style>
+
+    <style name="Theme.Prototype_14_7_2023" parent="Base.Theme.Prototype_14_7_2023" />
+</resources>
