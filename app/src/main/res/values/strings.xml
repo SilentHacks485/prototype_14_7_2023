@@ -13,8 +13,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_from_about_fragment">Hello from about fragment</string>
     <string name="about">ABOUT</string>
-    <string name="about_text"> This application was developed by Dale Scicluna and it will serve as the basis of IOT based communcation medium with the drone.A microcontroller will use an appropriate communication channel , which in turn will be used to form a stable connection where commands are send via the app will be read and interpreted by the microcontroller and perform a specific function.
+    <string name="about_text"> This application was developed by Dale Scicluna and it will serve as the basis of IOT based communcation medium with the drone.A microcontroller will use an appropriate communication channel , which in turn will be used to form a stable connection where commands sent via the app , will be read and interpreted by the microcontroller and perform a specific function.
     </string>
     <string name="gps_tracker">GPS TRACKER</string>
+    <string name="led_red">LED RED</string>
+    <string name="led_blue">LED BLUE</string>
+    <string name="led_green">LED GREEN</string>
 
 </resources>
