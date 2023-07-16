@@ -2,28 +2,18 @@ package com.example.prototype_14_7_2023;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link fragment_dashboard#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_dashboard extends Fragment implements OnMapReadyCallback {
-
-    private GoogleMap mMap;
+public class fragment_dashboard extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,32 +53,12 @@ public class fragment_dashboard extends Fragment implements OnMapReadyCallback {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-
-      }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
-
-        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.mapView);
-
-        mapFragment.getMapAsync(this);
-
-        return v;
-
-    }
-
-    @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-
-        mMap=googleMap;
-        LatLng initialLocation = new LatLng(37.7749, -122.4194);
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(initialLocation, 12f));
-        googleMap.addMarker(new MarkerOptions().position(initialLocation).title("Marker Title"));
-
-
+        return inflater.inflate(R.layout.fragment_dashboard2, container, false);
     }
 }
