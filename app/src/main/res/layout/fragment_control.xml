@@ -10,6 +10,9 @@
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="639dp" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+
+        />
 
 </FrameLayout>
